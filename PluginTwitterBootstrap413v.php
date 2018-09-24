@@ -34,13 +34,13 @@ class PluginTwitterBootstrap413v{
     return wfDocument::createHtmlElement('meta', null, array('name' => 'viewport', 'content' => "width=device-width, initial-scale=1, shrink-to-fit=no"));
   }
   private function getElementCss(){
-    return wfDocument::createHtmlElement('link', null, array('rel' => 'stylesheet', 'href' => '/plugin/twitter/bootstrap413v/css/bootstrap.min.css'));
+    return wfDocument::createHtmlElement('link', null, array('rel' => 'stylesheet', 'href' => '/plugin/twitter/bootstrap413v/css/bootstrap.min.css', 'id' => 'PluginTwitterBootstrap413v'));
   }
   private function getElementJsBootstrap(){
     return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/js/bootstrap.min.js'));
   }
   private function getElementJsJquery(){
-    return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/jquery/jquery_3.3.1.slim.min.js'));
+    return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/jquery/jquery_3.3.1.js'));
   }
   private function getElementJsPopper(){
     return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/popper/1.14.3_popper.min.js'));
