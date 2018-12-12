@@ -1,6 +1,13 @@
 <?php
 class PluginTwitterBootstrap413v{
   public function widget_include($data){
+    /**
+     * Tell other plugin that Bootstrap 4 is included.
+     */
+    $_SESSION['plugin']['twitter']['bootstrap413v']['include'] = true;
+    /**
+     * 
+     */
     wfPlugin::includeonce('wf/array');
     $data = new PluginWfArray($data);
     $element = array();
