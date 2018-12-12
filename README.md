@@ -27,3 +27,14 @@ if(document.getElementById('PluginTwitterBootstrap413v')){
 ```
 
 
+Check in PHP if Bootstrap 4 is included.
+```
+if(
+  isset($_SESSION['plugin']['twitter']['bootstrap413v']['include']) && 
+  $_SESSION['plugin']['twitter']['bootstrap413v']['include']
+  )
+{
+  echo('Bootstrap 4 is loaded!');
+}
+```
+
