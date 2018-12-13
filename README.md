@@ -37,4 +37,11 @@ if(
   echo('Bootstrap 4 is loaded!');
 }
 ```
+Or
+```
+$user = wfUser::getSession();
+if($user->get('plugin/twitter/bootstrap413v/include')){
+  echo('Bootstrap 4 is loaded!');
+}
+```
 
