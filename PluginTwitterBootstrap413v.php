@@ -38,7 +38,7 @@ class PluginTwitterBootstrap413v{
     return wfDocument::createHtmlElement('meta', null, array('charset' => 'utf-8'));
   }
   private function getElementMetaViewport(){
-    return wfDocument::createHtmlElement('meta', null, array('name' => 'viewport', 'content' => "width=device-width, initial-scale=1, shrink-to-fit=no"));
+    return wfDocument::createHtmlElement('meta', null, array('name' => 'viewport', 'content' => "width=device-width, user-scalable=no"));
   }
   private function getElementCss(){
     return wfDocument::createHtmlElement('link', null, array('rel' => 'stylesheet', 'href' => '/plugin/twitter/bootstrap413v/css/bootstrap.min.css', 'id' => 'PluginTwitterBootstrap413v'));
