@@ -18,6 +18,12 @@ data:
 ```
 
 
+## Version check
+
+Check if Bootstrap 4 is in usage.
+
+### Javascript
+
 Check in Javascript if Bootstrap 4 is loaded.
 
 ```
@@ -26,8 +32,10 @@ if(document.getElementById('PluginTwitterBootstrap413v')){
 }
 ```
 
+### PHP
 
 Check in PHP if Bootstrap 4 is included.
+
 ```
 if(
   isset($_SESSION['plugin']['twitter']['bootstrap413v']['include']) && 
@@ -37,11 +45,19 @@ if(
   echo('Bootstrap 4 is loaded!');
 }
 ```
-Or
 ```
 $user = wfUser::getSession();
 if($user->get('plugin/twitter/bootstrap413v/include')){
   echo('Bootstrap 4 is loaded!');
 }
+```
+
+###Element check.
+
+```
+type: div
+settings:
+  disabled: globals:_SESSION/plugin/twitter/bootstrap413v/include
+innerHTML: 
 ```
 
