@@ -28,6 +28,7 @@ class PluginTwitterBootstrap413v{
     if($data->get('data/js')){
       $element[] = $this->getElementJsBootstrap();
     }
+    $element[] = $this->getElementStyleWebmaster();
     $element[] = $this->getElementText('<!-- Bootstrap 4 - End -->');
     wfDocument::renderElement($element);
   }
@@ -51,5 +52,8 @@ class PluginTwitterBootstrap413v{
   }
   private function getElementJsPopper(){
     return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/popper/1.14.3_popper.min.js'));
+  }
+  private function getElementStyleWebmaster(){
+    return wfDocument::createHtmlElement('style', ".webmaster{}.webmaster-border{border:solid 1px red}.webmaster-text{color:red}");
   }
 }

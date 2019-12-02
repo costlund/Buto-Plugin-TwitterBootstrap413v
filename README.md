@@ -61,3 +61,8 @@ settings:
 innerHTML: 
 ```
 
+### Webmaster
+Classes for webmaster purpose are always added in a single style element.
+```
+.webmaster{}.webmaster-border{border:solid 1px red}.webmaster-text{color:red}
+```
