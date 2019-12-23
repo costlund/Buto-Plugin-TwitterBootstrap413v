@@ -54,6 +54,6 @@ class PluginTwitterBootstrap413v{
     return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/popper/1.14.3_popper.min.js'));
   }
   private function getElementStyleWebmaster(){
-    return wfDocument::createHtmlElement('style', ".webmaster{}.webmaster-border{border:solid 1px red}.webmaster-text{color:red}");
+    return wfDocument::createHtmlElement('style', ".webmaster{}.webmaster-border{border:solid 1px red !important}.webmaster-text{color:red !important}");
   }
 }

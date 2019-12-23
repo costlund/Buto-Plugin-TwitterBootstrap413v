@@ -1,6 +1,10 @@
-version: '1.0.0'
+version: '1.1.1'
 history:
-  '1.2.0':
+  '1.1.1':
+    date: '2019-12-23'
+    title: Webmaster class
+    description: Add important flag.
+  '1.1.0':
     date: '2019-12-02'
     title: Webmaster class
     description: Add classes for webmaster.
