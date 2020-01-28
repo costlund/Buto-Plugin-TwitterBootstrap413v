@@ -11,7 +11,7 @@ class PluginTwitterBootstrap413v{
     wfPlugin::includeonce('wf/array');
     $data = new PluginWfArray($data);
     $element = array();
-    $element[] = $this->getElementText('<!-- Bootstrap 4 - Start -->');
+    $element[] = $this->getElementText("\n<!-- PluginTwitterBootstrap413v, Start -->\n");
     if($data->get('data/meta')){
       $element[] = $this->getElementMetaCharset();
       $element[] = $this->getElementMetaViewport();
@@ -29,7 +29,7 @@ class PluginTwitterBootstrap413v{
       $element[] = $this->getElementJsBootstrap();
     }
     $element[] = $this->getElementStyleWebmaster();
-    $element[] = $this->getElementText('<!-- Bootstrap 4 - End -->');
+    $element[] = $this->getElementText("<!-- PluginTwitterBootstrap413v, End -->\n");
     wfDocument::renderElement($element);
   }
   private function getElementText($text){
