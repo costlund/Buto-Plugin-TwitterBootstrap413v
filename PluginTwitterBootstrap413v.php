@@ -18,6 +18,7 @@ class PluginTwitterBootstrap413v{
     }
     if($data->get('data/css')){
       $element[] = $this->getElementCss();
+      $element[] = $this->getElementCssStyleModal();
     }
     if($data->get('data/jquery')){
       $element[] = $this->getElementJsJquery();
@@ -43,6 +44,9 @@ class PluginTwitterBootstrap413v{
   }
   private function getElementCss(){
     return wfDocument::createHtmlElement('link', null, array('rel' => 'stylesheet', 'href' => '/plugin/twitter/bootstrap413v/css/bootstrap.min.css', 'id' => 'PluginTwitterBootstrap413v'));
+  }
+  private function getElementCssStyleModal(){
+    return wfDocument::createHtmlElement('style', "@media (min-width: 700px) {.modal-xl { max-width: 90% !important; } }");
   }
   private function getElementJsBootstrap(){
     return wfDocument::createHtmlElement('script', null, array('src' => '/plugin/twitter/bootstrap413v/js/bootstrap.min.js'));

@@ -1,5 +1,9 @@
-version: '1.1.1'
+version: '1.1.2'
 history:
+  '1.1.2':
+    date: '2020-08-21'
+    title: 'Extra modal style'
+    description: 'Add extra modal style to make modal-xl larger.'
   '1.1.1':
     date: '2019-12-23'
     title: Webmaster class
